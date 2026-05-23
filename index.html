@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Laundry Vibes Delhi | Premium Dry Cleaning</title>
+  <link rel="stylesheet" href="vibes.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            vibes: {
+              black: "#02040a",
+              dark: "#080c14",
+              cyan: "#00E5FF",
+              purple: "#D500F9",
+              blue: "#2979FF",
+              gray: "#A1A1AA"
+            }
+          },
+          boxShadow: {
+            "neon-cyan": "0 0 20px rgba(0, 229, 255, 0.3)",
+            "neon-purple": "0 0 20px rgba(213, 0, 249, 0.3)"
+          }
+        }
+      }
+    };
+  </script>
+</head>
+<body class="bg-[#02040a] text-white relative font-sans selection:bg-vibes-cyan/30 selection:text-white">
+  <div id="bubble-field" class="fixed inset-0 z-0 overflow-hidden pointer-events-none"></div>
+
+  <header class="sticky top-0 z-50 bg-[#02040a]/80 backdrop-blur-xl border-b border-white/10 px-4 lg:px-8 py-3">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <a href="#" class="flex items-center gap-3 group">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-vibes-cyan to-vibes-purple p-[1.5px] shadow-neon-cyan transition-all duration-300 group-hover:rotate-12">
+          <div class="w-full h-full bg-[#02040a] rounded-[10px] flex items-center justify-center">
+            <span class="text-xl font-black text-transparent bg-clip-text bg-gradient-to-r from-vibes-cyan to-vibes-purple">V</span>
+          </div>
+        </div>
+        <div class="flex flex-col">
+          <span class="text-sm tracking-wider font-extrabold uppercase font-mono leading-none">Laundry Vibes</span>
+           <span class="text-[10px] font-bold text-vibes-cyan uppercase tracking-widest leading-none mt-1">Delhi Premium</span>
+        </div>
+      </a>
+
+      <nav class="hidden lg:flex items-center gap-8 text-xs font-bold uppercase tracking-widest text-vibes-gray">
+        <a href="#evolution-section" class="hover:text-white">Evolution</a>
+        <a href="#services-section" class="hover:text-white">Services</a>
+        <a href="#restoration-section" class="hover:text-white">Proof</a>
+        <a href="#pricing-section" class="hover:text-white">Pricing</a>
+        <a href="#booking-section" class="hover:text-white">Booking</a>
+      </nav>
+
+      <div class="flex items-center gap-3">
+        <div class="hidden sm:flex items-center gap-2 bg-white/5 border border-white/10 rounded-full py-1.5 px-3.5">
+          <span class="w-2 h-2 rounded-full bg-emerald-400 pulse-glow"></span>
+          <span id="live-system-time" class="text-[10px] font-bold tracking-wider uppercase font-mono">Loading IST...</span>
+        </div>
+        <a href="#booking-section" class="bg-gradient-to-r from-vibes-cyan to-vibes-blue hover:shadow-neon-cyan text-slate-950 text-xs font-black uppercase tracking-widest px-4 py-2.5 rounded-xl transition-all">
+          Book Pickup
+        </a>
+        <button id="mobile-menu-toggle" class="lg:hidden p-2 text-white hover:text-vibes-cyan" aria-label="Toggle menu">
+          <i data-lucide="menu" class="w-6 h-6"></i>
+        </button>
+      </div>
+    </div>
+
+    <div id="mobile-nav-drawer" class="hidden lg:hidden mt-3 pt-3 border-t border-white/10 flex flex-col gap-4 pb-4">
+      <a href="#evolution-section" class="mobile-nav-link text-xs font-bold uppercase tracking-wider text-vibes-gray hover:text-white py-1">Evolution</a>
+      <a href="#services-section" class="mobile-nav-link text-xs font-bold uppercase tracking-wider text-vibes-gray hover:text-white py-1">Services</a>
+      <a href="#restoration-section" class="mobile-nav-link text-xs font-bold uppercase tracking-wider text-vibes-gray hover:text-white py-1">Proof</a>
+      <a href="#pricing-section" class="mobile-nav-link text-xs font-bold uppercase tracking-wider text-vibes-gray hover:text-white py-1">Pricing</a>
+      <a href="#booking-section" class="mobile-nav-link text-xs font-bold uppercase tracking-wider text-vibes-gray hover:text-white py-1">Booking</a>
+    </div>
+  </header>
+
+  <main class="relative z-10">
+    <section class="relative min-h-[92vh] flex items-center justify-center py-16 px-4 overflow-hidden border-b border-white/5">
+      <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-vibes-cyan/5 rounded-full blur-3xl"></div>
+      <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-vibes-purple/5 rounded-full blur-3xl"></div>
+
+      <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center w-full">
+        <div class="lg:col-span-7 space-y-8">
+          <div class="inline-flex items-center gap-2 bg-vibes-cyan/10 border border-vibes-cyan/30 rounded-full px-4 py-1.5">
+            <span class="w-2.5 h-2.5 rounded-full bg-vibes-cyan pulse-glow"></span>
+            <span class="text-[10px] font-bold text-vibes-cyan uppercase tracking-widest font-mono">Precision Dispatch active in Delhi NCR</span>
+          </div>
+
+          <h1 class="text-4xl sm:text-5xl lg:text-7xl font-extrabold tracking-tight leading-[1.1]">
+            Your Wardrobe is Premium.<br>
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-vibes-cyan via-vibes-blue to-vibes-purple">
+              Your Laundry Should Be Cinematic.
+            </span>
+          </h1>
+
+          <p class="text-sm md:text-base text-vibes-gray max-w-xl leading-relaxed">
+            Luxury dry cleaning, sneaker treatments, couture textile preservation, real-time fleet tracking, and ecological bio-cleaning for modern Delhi wardrobes.
+
+          </p>
+
+          <div class="flex flex-wrap gap-4 items-center">
+            <a href="#booking-section" class="bg-gradient-to-r from-vibes-cyan to-vibes-purple hover:shadow-neon-purple text-white text-xs font-black uppercase tracking-widest px-8 py-4 rounded-xl transition-all flex items-center gap-2">
+              <span>Book Express Pickup</span>
+              <i data-lucide="zap" class="w-4 h-4"></i>
+            </a>
+             <a href="tel:+911149020110" class="border border-white/15 hover:border-white/30 bg-white/5 text-white text-xs font-bold uppercase tracking-widest px-8 py-4 rounded-xl transition-all flex items-center gap-2">
+              <span>Call Logistics</span>
+              <i data-lucide="phone-call" class="w-4 h-4 text-vibes-cyan"></i>
+            </a>
+          </div>
+
+          <div class="pt-6 border-t border-white/10 flex items-center gap-4">
+            <div class="flex -space-x-2 overflow-hidden">
+              <span class="avatar">LV</span>
+              <span class="avatar bg-slate-700">MX</span>
+              <span class="avatar bg-slate-600">2K</span>
+            </div>
+            <p class="text-xs text-vibes-gray leading-tight">
+              Trusted by <strong class="text-white font-semibold">1,200+ creative professionals</strong>, boutiques, and families.
+            </p>
+          </div>
+        </div>
+
+        <div class="lg:col-span-5 flex justify-center">
+          <div class="relative w-full max-w-sm rounded-3xl p-5 bg-glass border border-white/10 shadow-neon-purple-hover">
+            <div class="bg-black/90 rounded-2xl p-4 border border-white/5 space-y-4">
+              <div class="flex items-center justify-between border-b border-white/10 pb-3">
+                <div class="flex items-center gap-2">
+                  <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
+                  <span class="text-[10px] font-bold tracking-widest font-mono uppercase text-vibes-cyan">Live Courier Map</span>
+                </div>
+                <span class="text-[10px] font-bold text-vibes-gray uppercase font-mono">#VIBE-921</span>
+              </div>
+
+              <div class="relative h-48 bg-[#080c14] rounded-xl overflow-hidden border border-white/5 flex items-center justify-center">
+                <div class="absolute inset-0 opacity-15 bg-[radial-gradient(#ffffff_1px,transparent_1px)] [background-size:16px_16px]"></div>
+                <svg class="absolute inset-0 w-full h-full p-4" viewBox="0 0 100 100" preserveAspectRatio="none">
+                  <defs>
+                    <linearGradient id="gradient-cyan" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" stop-color="#00E5FF" />
+                      <stop offset="100%" stop-color="#D500F9" />
+                    </linearGradient>
+                  </defs>
+                  <path d="M 10,80 Q 45,25 90,20" fill="none" stroke="url(#gradient-cyan)" stroke-width="2" stroke-dasharray="4" />
+                </svg>
+                <div class="absolute bottom-8 left-8 text-center">
+                 <span class="text-[8px] font-bold text-vibes-gray mt-1 block">CP Hub</span>
+                  <span class="text-[8px] font-bold text-vibes-gray mt-1 block">Colaba Hub</span>
+                </div>
+                <div class="absolute top-10 right-10 text-center">
+                  <span class="map-node bg-vibes-cyan"></span>
+                  <span class="text-[8px] font-bold text-vibes-cyan mt-1 block font-mono">Your Garments</span>
+                </div>
+                <div class="absolute top-1/2 left-1/3 bg-[#02040a]/90 border border-white/10 py-1 px-2.5 rounded text-[9px]">
+                  Sea Link Route
+                </div>
+              </div>
+
+              <div class="bg-white/5 rounded-xl p-3 border border-white/10 flex justify-between items-center">
+                <div>
+                  <span class="text-[9px] text-vibes-gray uppercase block tracking-wider">ETA</span>
+                  <span class="text-sm font-bold">14 Minutes Away</span>
+                </div>
+                <div class="text-right">
+                  <span class="text-[9px] text-vibes-cyan uppercase block tracking-wider font-mono">Status</span>
+                  <span class="text-xs font-bold text-emerald-400">In Transit</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="evolution-section" class="section-band bg-[#080c14]/40">
+      <div class="max-w-7xl mx-auto space-y-12">
+        <div class="text-center max-w-3xl mx-auto space-y-4">
+          <span class="tag text-vibes-cyan bg-vibes-cyan/10 border-vibes-cyan/20">Operational Excellence Audit</span>
+          <h2 class="section-title">Transparency is Our Strongest Aesthetic.</h2>
+           <p class="section-copy">We rebuilt dispatch, tracking, quality control, and express delivery into a tighter Delhi-ready system.</p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+          <div class="lg:col-span-7 bg-glass rounded-3xl p-6 sm:p-8 border border-white/10 space-y-6">
+            <h3 class="text-xl font-bold flex items-center gap-2">
+              <i data-lucide="activity" class="w-5 h-5 text-vibes-cyan"></i>
+              Core Operational Upgrades
+            </h3>
+            <div class="space-y-4">
+              <div class="upgrade-row"><span>Logistics Fleet</span><del>Third-party standard delivery</del><strong>Private Climate Fleet</strong></div>
+              <div class="upgrade-row"><span>Order Tracking</span><del>Intermittent SMS updates</del><strong>Live GPS Dashboard</strong></div>
+              <div class="upgrade-row"><span>Express Pipeline</span><del>48-to-72 hour response</del><strong>24-Hour Return Guarantee</strong></div>
+              <div class="upgrade-row"><span>Quality Control</span><del>Manual inspection</del><strong>Laser Fabric Verification</strong></div>
+            </div>
+          </div>
+          <div class="lg:col-span-5 grid gap-6">
+            <div class="metric-card"><i data-lucide="navigation"></i><div><b>99.4%</b><span>On-Time Performance</span></div></div>
+            <div class="metric-card"><i data-lucide="hourglass"></i><div><b>24 MINS</b><span>Average Pickup Window</span></div></div>
+            <div class="metric-card"><i data-lucide="award"></i><div><b>94.8%</b><span>Customer Retention</span></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services-section" class="section-band">
+      <div class="max-w-7xl mx-auto space-y-12">
+        <div class="text-center max-w-2xl mx-auto space-y-4">
+          <span class="tag text-vibes-purple bg-vibes-purple/10 border-vibes-purple/20">Our Specializations</span>
+          <h2 class="section-title">Precision Care for Every Fiber.</h2>
+          <p class="section-copy">Select standard dry care lines or advanced ecological restorative cleaning cycles.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <article class="service-card"><span>👔</span><h3>Couture Dry Cleaning</h3><p>Designer garments, bridal wear, silk sarees, and high-fashion pieces.</p></article>
+          <article class="service-card"><span>👟</span><h3>Sneaker & Streetwear Spa</h3><p>Collector-grade sneakers, leather jackets, mesh deep treatment, and soles.</p></article>
+          <article class="service-card"><span>⚡</span><h3>Performance Gym Care</h3><p>Neutral detergents for technical weaves and moisture-wicking fabrics.</p></article>
+          <article class="service-card"><span>🧺</span><h3>Luxury Wash & Fold</h3><p>Sorted laundry, sanitizing wash, slow tumble dry, and precision folding.</p></article>
+          <article class="service-card"><span>💨</span><h3>Steam Pressing</h3><p>Vacuum table steam shaping without shiny iron scars or heat damage.</p></article>
+          <article class="service-card"><span>🏠</span><h3>Curtains & Linens</h3><p>Deep sanitization for drapes, rugs, duvets, and heavy upholstery.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="restoration-section" class="section-band bg-[#080c14]/40">
+      <div class="max-w-4xl mx-auto space-y-10">
+        <div class="text-center space-y-4">
+          <span class="tag text-vibes-cyan bg-vibes-cyan/10 border-vibes-cyan/20">Interactive Proof of Care</span>
+          <h2 class="section-title">Visual Restoration Engine</h2>
+          <p class="section-copy">Drag the glowing slider to evaluate stain extraction treatment.</p>
+        </div>
+
+        <div id="restoration-slider" class="relative h-[360px] sm:h-[450px] w-full rounded-3xl overflow-hidden border border-white/10 shadow-glass select-none cursor-ew-resize">
+          <div class="absolute inset-0 bg-slate-950">
+            <div class="absolute top-4 left-4 z-10 label-red">Before: Complex Stain</div>
+            <div class="w-full h-full bg-gradient-radial from-red-950/20 via-slate-950 to-slate-950 flex items-center justify-center p-8">
+              <div class="garment-box border-red-500/10"><span>👔</span><div class="stain stain-one"></div><div class="stain stain-two"></div></div>
+            </div>
+          </div>
+          <div id="after-overlay" class="absolute inset-0 bg-slate-950 pointer-events-none" style="clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%);">
+            <div class="absolute top-4 right-4 z-10 label-cyan">After: Pristine Restoration</div>
+            <div class="w-full h-full bg-gradient-radial from-vibes-cyan/10 via-slate-950 to-slate-950 flex items-center justify-center p-8">
+              <div class="garment-box border-vibes-cyan/30 shadow-[0_0_30px_rgba(0,229,255,0.15)]"><span>👔</span></div>
+            </div>
+          </div>
+          <div id="slider-handle" class="absolute top-0 bottom-0 w-[2px] bg-gradient-to-b from-vibes-cyan via-vibes-purple to-vibes-cyan cursor-ew-resize" style="left: 50%;">
+            <div class="absolute top-1/2 -translate-y-1/2 -translate-x-1/2 w-10 h-10 rounded-full bg-[#02040a] border-2 border-vibes-cyan flex items-center justify-center shadow-neon-cyan">
+              <i data-lucide="split" class="w-4 h-4 text-vibes-cyan"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing-section" class="section-band">
+      <div class="max-w-7xl mx-auto space-y-12">
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-8">
+          <div class="space-y-4">
+            <span class="tag text-vibes-cyan bg-vibes-cyan/10 border-vibes-cyan/20">Pricing Selector Matrix</span>
+            <h2 class="section-title">Transparent Rates. Zero Surcharges.</h2>
+            <p class="section-copy">Use Express mode for rapid 24h turnaround.</p>
+          </div>
+          <div class="flex items-center gap-3 bg-white/5 border border-white/10 rounded-2xl p-2">
+            <span id="label-standard" class="text-xs font-bold">Standard (48h)</span>
+            <button id="pricing-tier-toggle" class="w-12 h-6 bg-white/10 rounded-full p-1 transition-colors" aria-label="Toggle tier pricing">
+              <span class="toggle-dot w-4 h-4 bg-white rounded-full block transition-transform"></span>
+            </button>
+            <span id="label-express" class="text-xs font-bold text-vibes-gray flex items-center gap-1"><i data-lucide="zap" class="w-3.5 h-3.5 text-vibes-cyan"></i> Express (24h)</span>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="price-card"><small>Standard Garment</small><h4>Shirts & Casual Tops</h4><p id="price-shirts">₹149 onwards</p><span>Eco wash & crisp press.</span></div>
+          <div class="price-card"><small>Heritage Wear</small><h4>Bridal / Silk Lehengas</h4><p id="price-bridal">₹2,500 onwards</p><span>Single item isolation.</span></div>
+          <div class="price-card"><small>Collector Gear</small><h4>Sneaker Spa</h4><p id="price-sneakers">₹950 onwards</p><span>Deep detail and odor neutralization.</span></div>
+          <div class="price-card"><small>Heavy Linens</small><h4>Comforters & Blankets</h4><p id="price-bedding">₹199 onwards</p><span>Dust mite sterilization.</span></div>
+          <div class="price-card"><small>Ethnic Premium</small><h4>Designer Sarees</h4><p id="price-sarees">₹350 onwards</p><span>Zari and embroidery protection.</span></div>
+          <div class="price-card"><small>Heavy Curtains</small><h4>Premium Drapes</h4><p id="price-curtains">₹299 onwards</p><span>Cleaned and deodorized.</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="booking-section" class="section-band bg-[#080c14]/40">
+      <div class="max-w-4xl mx-auto space-y-10">
+        <div class="text-center space-y-4">
+          <span class="tag text-vibes-cyan bg-vibes-cyan/10 border-vibes-cyan/20">Step-by-Step Dispatch Interface</span>
+          <h2 class="section-title">Initialize Your Collection</h2>
+          <p class="section-copy">Configure care options and secure a slot with live estimates.</p>
+        </div>
+
+        <div id="booking-card-main" class="bg-glass rounded-3xl border border-white/10 p-5 md:p-10 shadow-glass space-y-8">
+          <div class="flex items-center justify-between border-b border-white/5 pb-6">
+            <div>
+              <h3 class="text-lg font-bold">Garment Intake Engine</h3>
+              <p class="text-xs text-vibes-gray mt-1">Configure your collection request</p>
+            </div>
+            <div class="text-right">
+              <span id="step-indicator-text" class="text-xs font-mono text-vibes-purple font-bold uppercase">Step 1 of 3</span>
+              <div class="w-24 h-1 bg-white/10 mt-1.5 rounded-full overflow-hidden">
+                <div id="step-progress-bar" class="h-full bg-gradient-to-r from-vibes-cyan to-vibes-purple transition-all" style="width: 33.33%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <div id="booking-warning-banner" class="hidden bg-red-950/40 border border-red-500/30 rounded-xl p-3 text-red-300 text-xs items-center gap-2">
+            <i data-lucide="alert-circle" class="w-4 h-4 text-red-400"></i>
+            <span id="booking-warning-text">Please resolve current step requirements.</span>
+          </div>
+
+          <div id="booking-step-1" class="booking-step-pane space-y-6">
+            <label class="block text-sm font-semibold">Select Fabric Care Pipeline</label>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+              <button data-service="dry-cleaning" class="service-selection-btn selected"><span>👔</span><strong>Couture Dry Clean</strong></button>
+              <button data-service="sneaker-spa" class="service-selection-btn"><span>👟</span><strong>Sneaker Spa</strong></button>
+              <button data-service="wash-fold" class="service-selection-btn"><span>🧺</span><strong>Wash & Fold</strong></button>
+            </div>
+            <label class="flex items-center justify-between p-4 bg-[#02040a]/60 rounded-xl border border-white/5">
+              <span><b class="text-xs block">Vibes Express 24-Hour Return</b><small class="text-vibes-gray">Express logistics scheduling (+60% cost)</small></span>
+              <input id="booking-express-toggle" type="checkbox" class="w-5 h-5 accent-vibes-cyan cursor-pointer">
+            </label>
+          </div>
+
+          <div id="booking-step-2" class="booking-step-pane hidden space-y-6">
+           <label class="block text-sm font-semibold">Operational Delhi NCR Zone</label>
+            <select id="booking-zone-select" class="form-field">
+              <option value="central-delhi">Central Delhi Hub (Connaught Place, Karol Bagh, Civil Lines)</option>
+              <option value="south-delhi">South Delhi Axis (Saket, Vasant Kunj, Greater Kailash, Defence Colony)</option>
+              <option value="gurgaon-noida">NCR Corridor (Gurugram, Noida, Indirapuram)</option>
+
+            </select>
+            <label class="block text-sm font-semibold">Preferred Collection Time Window</label>
+            <input id="booking-time-input" type="datetime-local" class="form-field">
+            <span class="text-[10px] text-vibes-gray block">Daily dispatch closes at 10:30 PM.</span>
+          </div>
+
+          <div id="booking-step-3" class="booking-step-pane hidden space-y-4">
+            <label class="block text-sm font-semibold">Custom Garment Processing Requests</label>
+            <label class="option-row"><input type="radio" name="perfume" checked> Vibes Signature Scent</label>
+            <label class="option-row"><input type="radio" name="perfume"> Hypoallergenic Zero-Scent Wash</label>
+            <label class="option-row"><input type="radio" name="perfume"> Traditional Crisp Starch Finishing</label>
+          </div>
+
+          <div class="p-4 bg-gradient-to-r from-vibes-cyan/5 to-vibes-purple/5 border border-vibes-cyan/25 rounded-2xl flex justify-between items-center">
+            <div>
+              <span class="text-[10px] uppercase text-vibes-gray tracking-wider block">Estimated Care Rate</span>
+              <span class="text-2xl font-black font-mono"><span id="booking-rate-est">₹450</span> <small class="text-xs font-normal text-vibes-gray">onwards</small></span>
+            </div>
+            <div class="text-right">
+              <span class="text-xs text-vibes-cyan font-bold block">Free Fleet Pickup</span>
+              <span id="booking-express-badge" class="hidden text-[10px] text-vibes-purple font-mono uppercase block mt-0.5">Express Priority Active</span>
+            </div>
+          </div>
+
+          <div class="flex justify-between items-center border-t border-white/5 pt-6">
+            <button id="booking-back-btn" class="px-5 py-3 rounded-xl text-xs font-bold uppercase tracking-wider border border-white/10 hover:bg-white/5">Back</button>
+            <button id="booking-next-btn" class="px-6 py-3 bg-gradient-to-r from-vibes-cyan to-vibes-blue hover:shadow-neon-cyan text-slate-950 text-xs font-black uppercase tracking-widest rounded-xl flex items-center">
+              <span>Continue</span>
+              <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact-section" class="section-band">
+      <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+        <div class="lg:col-span-5 bg-glass rounded-3xl p-6 sm:p-8 border border-white/10 space-y-6">
+          <h2 class="text-3xl font-extrabold">Location & Logistics Hub</h2>
+            <p class="text-sm text-vibes-gray">Laundry Vibes Clean Center, Shop 12, Inner Circle, Connaught Place, New Delhi, Delhi 110001</p>
+  
+          <div class="grid grid-cols-2 gap-3">
+             <a href="https://wa.me/911149020110" target="_blank" class="contact-btn text-emerald-400 border-emerald-500/20 bg-emerald-500/10"><i data-lucide="message-circle"></i> WhatsApp</a>
+            <a href="tel:+911149020110" class="contact-btn text-vibes-cyan border-vibes-cyan/20 bg-vibes-cyan/10"><i data-lucide="phone"></i> Call</a>
+         </div>
+        </div>
+        <div class="lg:col-span-7 bg-glass rounded-3xl overflow-hidden border border-white/10 min-h-[320px]">
+       <iframe src="https://www.google.com/maps?q=Connaught%20Place%20New%20Delhi&output=embed" class="w-full h-full min-h-[320px] border-0 grayscale invert opacity-75 contrast-125" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+     </div>
+      </div>
+    </section>
+  </main>
+
+  <button id="chat-launcher" class="fixed bottom-6 right-6 z-40 w-14 h-14 rounded-full bg-gradient-to-tr from-vibes-cyan to-vibes-blue hover:shadow-neon-cyan flex items-center justify-center transition-all hover:scale-105 shadow-lg" aria-label="Open support terminal">
+    <i data-lucide="message-square" class="w-6 h-6 text-slate-950"></i>
+  </button>
+
+  <div id="chat-terminal-overlay" class="fixed bottom-24 right-6 z-40 w-[350px] sm:w-[400px] max-w-[calc(100vw-32px)] border border-white/15 rounded-2xl bg-[#080c14]/95 overflow-hidden shadow-2xl font-mono hidden">
+    <div class="bg-slate-950 px-4 py-3 flex items-center justify-between border-b border-white/10">
+      <div class="flex items-center gap-2">
+        <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></span>
+        <span class="text-[10px] font-bold uppercase tracking-wider">VibeCheck Terminal v2.1</span>
+      </div>
+      <button id="chat-close-btn" class="text-vibes-gray hover:text-white" aria-label="Close support"><i data-lucide="x" class="w-4 h-4"></i></button>
+    </div>
+    <div id="chat-logs" class="h-64 overflow-y-auto p-4 space-y-3 chatbot-scrollbar text-xs">
+      <div class="p-2 rounded bg-black/40 text-gray-500 font-mono text-[9px] text-center border-b border-white/5">System initialized.</div>
+      <div class="chat-bubble bot">Ask about <strong>rates</strong>, <strong>zones</strong>, <strong>weather</strong>, or <strong>status</strong>.</div>
+    </div>
+    <form id="chat-input-form" class="p-3 bg-black/60 border-t border-white/10 flex items-center">
+      <input id="chat-text-input" type="text" placeholder="Ask about rates, zones..." class="flex-1 bg-[#080c14] p-2.5 rounded-lg border border-white/10 text-white text-xs focus:outline-none focus:border-vibes-cyan">
+      <button type="submit" class="ml-2 px-4 py-2.5 bg-gradient-to-r from-vibes-cyan to-vibes-blue rounded-lg text-black text-xs font-black uppercase tracking-wider">Send</button>
+    </form>
+  </div>
+
+  <footer class="bg-slate-950 border-t border-white/5 pt-16 pb-10 px-4 lg:px-8 relative z-10">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between gap-8 text-xs text-vibes-gray">
+      <div>
+        <h3 class="text-white font-extrabold uppercase tracking-widest font-mono mb-3">Laundry Vibes</h3>
+        <p>Premium garment care for Central Delhi, South Delhi, and Delhi NCR corridors.</p>
+      </div>
+      <div class="font-mono">
+        <p>concierge@laundryvibes.in</p>
+        <p>+91 11 4902 0110</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="app.js"></script>
+</body>
+</html>
